@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity() {
             val cadastrar = Intent(this,CadastroActivity::class.java)
             startActivity(cadastrar )
         }
+        binding.botaoEntrar.setOnClickListener({
+            val entrar = Intent(this, TelaDeLoginActivity::class.java)
+            startActivity(entrar)
+        })
     }
 
     private lateinit var binding: ActivityMainBinding

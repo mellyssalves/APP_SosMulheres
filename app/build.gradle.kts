@@ -38,7 +38,6 @@ android {
         enable= true
 
     }
-
 }
 
 dependencies {

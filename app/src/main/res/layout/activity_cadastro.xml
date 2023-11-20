@@ -67,7 +67,7 @@
 
 
     <EditText
-        android:id="@+id/edittextPasswordCadastro"
+        android:id="@+id/textPasswordCadastro"
         android:layout_width="299dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -80,20 +80,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.629" />
 
-    <EditText
-        android:id="@+id/editConfirmarSenha"
-        android:layout_width="299dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:hint="Confirmar Senha"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.728" />
-
     <Button
         android:id="@+id/buttonCadastrar"
         android:layout_width="wrap_content"
@@ -101,8 +87,8 @@
         android:text="Cadastrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittextPasswordCadastro"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintTop_toBottomOf="@+id/textPasswordCadastro"
+        app:layout_constraintVertical_bias="0.414" />
 </androidx.constraintlayout.widget.ConstraintLayout>

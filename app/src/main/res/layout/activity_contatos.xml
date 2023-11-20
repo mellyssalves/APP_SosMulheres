@@ -33,29 +33,27 @@
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.308" />
+        app:layout_constraintVertical_bias="0.438" />
 
     <EditText
-        android:id="@+id/editNomeContato"
+        android:id="@+id/editTextNomeContato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Ex: Joana Sousa"
         android:inputType="text"
-        android:minHeight="48dp"
+        android:textSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        app:layout_constraintVertical_bias="0.532" />
 
     <TextView
         android:id="@+id/tvPhoneContatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:minHeight="48dp"
         android:text="Número de Telefone"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -64,8 +62,7 @@
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513" />
-
+        app:layout_constraintVertical_bias="0.623" />
 
     <EditText
         android:id="@+id/editTextPhoneContatos"
@@ -74,14 +71,26 @@
         android:ems="10"
         android:hint="(00)00000-0000"
         android:inputType="phone"
-        android:minHeight="48dp"
+        android:textSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.625" />
+        app:layout_constraintVertical_bias="0.714" />
 
+    <TextView
+        android:id="@+id/textViewContatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salve o contato de uma pessoa que receberá uma notificação sua em situações necessárias."
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
 
 
     <Button
@@ -95,22 +104,23 @@
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonSalvar"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.166"
+        />
 
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneContatos"
+        app:layout_constraintVertical_bias="0.166"
+                 />
 
-
-        <Button
-            android:id="@+id/buttonSalvar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Salvar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextPhoneContatos"
-            app:layout_constraintVertical_bias="0.166"/>
 
 
 

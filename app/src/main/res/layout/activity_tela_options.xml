@@ -49,7 +49,7 @@
         app:layout_constraintVertical_bias="0.011" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageContatos"
         android:layout_width="114dp"
         android:layout_height="108dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageContatos"
         app:layout_constraintVertical_bias="0.13" />
 
     <ImageView

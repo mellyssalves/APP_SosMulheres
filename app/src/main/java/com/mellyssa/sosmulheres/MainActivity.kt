@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.mellyssa.sosmulheres.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -14,13 +15,17 @@ class MainActivity : AppCompatActivity() {
 
         binding.button2.setOnClickListener {
             val cadastrar = Intent(this,CadastroActivity::class.java)
-            startActivity(cadastrar )
+            startActivity(cadastrar)
         }
+
         binding.botaoEntrar.setOnClickListener {
-            val entrar = Intent(this, TelaDeLoginActivity::class.java)
-            startActivity(entrar)
+            val intent =  Intent(this, TelaDeLoginActivity::class.java)
+            startActivity(intent)
         }
+
+
+        }
+
     }
 
-    private lateinit var binding: ActivityMainBinding
-}
+

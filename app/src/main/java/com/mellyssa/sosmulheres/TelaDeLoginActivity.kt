@@ -13,13 +13,16 @@ import com.mellyssa.sosmulheres.databinding.ActivityCadastroBinding
 
 
 class TelaDeLoginActivity : AppCompatActivity() {
+    private lateinit var binding: TelaDeLoginBinding
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tela_de_login)
+
 
         binding = TelaDeLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        auth = FirebaseAuth.getInstance()
 
         binding.botaoLogin.setOnClickListener {
             val email: String = binding.editTextTextEmailAddress2.text.toString()
@@ -38,7 +41,7 @@ class TelaDeLoginActivity : AppCompatActivity() {
     }
 
 
-    private lateinit var binding: TelaDeLoginBinding
+
 
     private fun login(email: String, senha: String) {
         auth.signInWithEmailAndPassword(email, senha).addOnCompleteListener {

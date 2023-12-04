@@ -16,6 +16,19 @@ class TelaOptions : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        val botaoContatos: ImageView  = findViewById(R.id.imageView6)
+        val botaoInformaoces: ImageView = findViewById(R.id.imageView5)
+
+        botaoContatos.setOnClickListener {
+            val intent = Intent(this, ListaContatosActivity::class.java)
+            startActivity(intent)
+        }
+
+        botaoInformaoces.setOnClickListener {
+            val bntInformações = Intent(this, TelaInformacoes::class.java)
+            startActivity(bntInformações)
+        }
         inicializaToolbar()
         }
     private fun inicializaToolbar(){

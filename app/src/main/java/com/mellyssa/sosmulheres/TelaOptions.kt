@@ -35,7 +35,7 @@ class TelaOptions : AppCompatActivity() {
         val toolbar = binding.toolbarOptions.toolbar
         setSupportActionBar(toolbar)
         supportActionBar?.apply{
-            title = "TESTE"
+            title = "SOS MULHERES"
             setDisplayHomeAsUpEnabled(true)
         }
     }

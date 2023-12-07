@@ -3,14 +3,11 @@ package com.mellyssa.sosmulheres
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
-import android.util.Log
-import android.view.View
 import android.widget.Toast
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.auth.User
 
 import com.mellyssa.sosmulheres.databinding.ActivityCadastroBinding
 import com.mellyssa.sosmulheres.model.Usuario

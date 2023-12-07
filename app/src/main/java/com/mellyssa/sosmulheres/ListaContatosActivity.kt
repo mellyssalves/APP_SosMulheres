@@ -63,6 +63,11 @@ class ListaContatosActivity : AppCompatActivity() {
 
 
         }
+
+        binding.buttondelete.setOnClickListener {
+            val deleteContato = Intent(this, TelaOperacoesContato::class.java)
+            startActivity(deleteContato)
+        }
     }
 
 

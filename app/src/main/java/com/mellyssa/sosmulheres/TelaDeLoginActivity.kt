@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.Toast
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
+
 import com.google.firebase.auth.auth
 import com.mellyssa.sosmulheres.databinding.ActivityCadastroBinding
 

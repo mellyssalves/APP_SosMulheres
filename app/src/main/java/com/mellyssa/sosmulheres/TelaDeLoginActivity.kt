@@ -1,16 +1,23 @@
 package com.mellyssa.sosmulheres
 
 import android.content.Intent
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.mellyssa.sosmulheres.databinding.TelaDeLoginBinding
 import android.util.Log
+import android.util.Patterns
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 
 import com.google.firebase.auth.auth
+import com.google.rpc.context.AttributeContext.Auth
 import com.mellyssa.sosmulheres.databinding.ActivityCadastroBinding
+import com.mellyssa.sosmulheres.databinding.ActivityResetarSenhaBinding
 
 
 class TelaDeLoginActivity : AppCompatActivity() {
@@ -39,6 +46,13 @@ class TelaDeLoginActivity : AppCompatActivity() {
                 ).show()
             }
         }
+
+        binding.textForgot.setOnClickListener {
+            val intent = Intent(this, ResetarSenha::class.java)
+            startActivity(intent)
+        }
+
+
     }
 
 
@@ -59,4 +73,7 @@ class TelaDeLoginActivity : AppCompatActivity() {
     companion object{
         private var TAG= "emailEsenha"
     }
+
+
+
 }

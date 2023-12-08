@@ -4,17 +4,11 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
-import android.telephony.SmsManager
-import android.view.View
-import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import com.mellyssa.sosmulheres.databinding.ActivityMainBinding
 import com.mellyssa.sosmulheres.databinding.ActivityTelaOptionsBinding
-import com.mellyssa.sosmulheres.databinding.TelaDeLoginBinding
 import org.w3c.dom.Text
 
 
@@ -29,20 +23,31 @@ class TelaOptions : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val btnHelp: ImageView = findViewById(R.id.btnHelp)
+        val btnProtect: ImageView = findViewById(R.id.btnProtect)
         val textMessage: TextView = findViewById(R.id.textMessage)
-        btnHelp.setOnClickListener {
+        btnProtect.setOnClickListener {
             Thread(Runnable{
                 Thread.sleep(5000)
                 runOnUiThread{
-                    textMessage.text= "Mensagem enviada para todos os contatos!"
+                    textMessage.text= "Redirecionando para site de medida protetiva!"
                 }
             }).start()
         }
 
+        val btnInfo: ImageView = findViewById(R.id.btnInfo)
+        val textMessage2: TextView = findViewById(R.id.textMessage2)
+        btnInfo.setOnClickListener {
+            Thread(Runnable{
+            Thread.sleep(5000)
+            runOnUiThread {
+                textMessage2.text = "Informações verificadas"
+            }
+        }).start()
+        }
+
 
         val botaoContatos: ImageView  = findViewById(R.id.imageView6)
-        val botaoInformaoces: ImageView = findViewById(R.id.imageView5)
+        val botaoInformaoces: ImageView = findViewById(R.id.btnInfo)
         val botaoSOS: ImageView = findViewById(R.id.imageView2)
 
         botaoContatos.setOnClickListener {
